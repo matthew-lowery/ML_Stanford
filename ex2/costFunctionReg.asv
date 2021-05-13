@@ -22,15 +22,14 @@ h = sigmoid(X*theta);
 % vectorized implementation
 J = ((-y'*log(h) - (1-y)'*log(1-h))/m) + lambda/(2*m)*sum(theta(2:end).^2);
 
-% make this for just theta(1) and substitute 
 
-%grad = (1/m) * X' * (h-y);
+grad = (1/m) * X' * (h-y);
 
+temp = theta(1);
 
+grad = (1/m) * X' * (h-y) + lambda/m*theta; % except we don't want theta 1 to have this last term 
 
-reg = lambda/m*theta;
-reg(1) = 0;
-grad = (1/m) * X' * (h-y) + reg;
+theta(1) = temp;
 
 
 
