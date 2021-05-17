@@ -22,20 +22,19 @@ p = zeros(size(X, 1), 1);
 
 
 X = [ones(m, 1), X];
-a1 = X;
+a1 = X
 
-z2 = Theta1*a1';
-a2 = sigmoid(z2);
+z2 = theta1*a1
+a2 = sigmoid(z2)
 
-a2 = [ones(m,1), a2'];
+a2 = [ones(size(a2,1),1), a2]
 
 
-z3 = a2*Theta2';
-a3 = sigmoid(z3);
+z3 = theta2 *a2
+a3 = sigmoid(z3)
 
-[~,p]=max(a3');
-p = p(:);
-
+% then we'll have a vector with prediction values that we have to get the
+% max index of 
 
 
 
