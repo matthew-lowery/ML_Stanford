@@ -9,3 +9,6 @@ contains code for completing a vectorized implementation of a logistic regressio
 
 ### ex3 
 contains code for completing a vectorized implementation of an One-vs-All logistic regression classifier and neural networks to recognize hand-written digits
+
+### ex4 
+implement the backpropagation algorithm and regularization for neural networks, applying it to recognize hand-written digits
