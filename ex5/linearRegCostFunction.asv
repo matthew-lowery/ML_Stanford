@@ -27,9 +27,8 @@ squaredError = sum((h-y).^2)/(2*m);
 
 J = squaredError + regTerm;
 
-theta(1) = 0;
-
-grad = (((h-y)'*X)/m) + (lambda/m)*theta';
+regTerm = lambda
+((h-y)'*X) + (lambda/m)*theta
 
 
 
