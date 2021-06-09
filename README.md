@@ -12,3 +12,7 @@ contains code for completing a vectorized implementation of an One-vs-All logist
 
 ### ex4 
 implement the backpropagation algorithm and regularization for neural networks, applying it to recognize hand-written digits
+
+### ex5 
+implement linear regression (w/ polynomial features added), using it to study models with different bias-variance properties
+from learning curves & what not
