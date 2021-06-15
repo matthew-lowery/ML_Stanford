@@ -16,3 +16,6 @@ implement the backpropagation algorithm and regularization for neural networks, 
 ### ex5 
 implement linear regression (w/ polynomial features added), using it to study models with different bias-variance properties
 from learning curves & what not
+
+### ex6 
+using SVMs to build a spam email classifier
