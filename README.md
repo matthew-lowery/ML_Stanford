@@ -18,4 +18,8 @@ implement linear regression (w/ polynomial features added), using it to study mo
 from learning curves & what not
 
 ### ex6 
-using SVMs to build a spam email classifier
+use SVMs to build a spam email classifier
+
+### ex7 
+implement K-means clustering algorithm to compress an image (finding 16 most common colors from RGB encoding and storing each pixel as an index of the 16);
+use PCA to find a low-dimensional representation of face images 
