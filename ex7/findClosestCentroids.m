@@ -21,6 +21,14 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
+for i=1: size(X,1) % for each example
+    dist_sq = (X(i,:) - centroids).^2;
+    abs_dist = sum(dist_sq,2);
+    [M,I] = min(abs_dist);
+    idx(i) = I;
+end
+
+% centroids look like initial_centroids = [3 3; 6 2; 8 5];
 
 
 

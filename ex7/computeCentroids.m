@@ -26,11 +26,20 @@ centroids = zeros(K, n);
 % Note: You can use a for-loop over the centroids to compute this.
 %
 
+% want all examples in X associated with each centroid 
+% make the logical array, then use find to get the nonzero indexes
 
+%1,2,3 correspond to the which centroid 
 
-
-
-
+for i=1: K
+    
+    X_vals = X(idx == i, :);
+    % or 
+    % indices = find(idx == i);
+    % X_vals = X(indices, :);
+    
+    centroids(i, :) = mean(X_vals, 1);  
+end
 
 
 % =============================================================
